@@ -78,22 +78,10 @@
 				<h1>CHANGE GAME</h1>
 				<span id="close"></span>
 				<div id="switchButtons">
-					<button id="switch64">Super Smash Bros. 64</button>
-					<button id="switchMelee">Super Smash Bros. Melee</button>
-					<button id="switchBrawl">Super Smash Bros. Brawl</button>
-					<button id="switchSmash4">Super Smash Bros. 4 (Screenshots)</button>
-					<button id="switchSSB4Renders">Super Smash Bros. 4 (Renders)</button><br>
-					<button id="switchPM">Project M</button>
-					<button id="switchSSF2">Super Smash Flash 2</button>
-					<button id="switchBrawlMinus">Brawl Minus</button>
-					<button id="switchBrawlZeus">Brawl Zeus</button><br>
-					<button id="switchSFV">Street Fighter V</button>
-					<button id="switchGGREV">Guilty Gear Xrd -Revelator-</button>
-					<button id="switchBrawlhalla">Brawlhalla</button>
-					<button id="switchOW">Overwatch</button>
+					<button id="switchEmoji">Emoji</button>
 				</div>
 				<p><strong>Changing your game will empty your tierlist!</strong> Do not click unless you are sure you want to change! You cannot undo this.</p>
-				<p>64, Melee, Brawl, and Smash 4 screenshot icons from <a href="http://ssbwiki.com">SmashWiki</a>. Smash 4 render icons made by /u/wafflepotamus. Project M screenshot icons made by /u/brewster_the_pigeon. Smash Flash 2 screenshot icons made by /u/AxeEnding999. Brawl Minus icons made by /u/mslb99. Street Fighter V icons from <a href="http://sfv-wiki.com/wiki/STREET_FIGHTER_V_Wiki">SFV-Wiki</a>. Guilty Gear screenshot from <a href="http://www.dustloop.com/wiki/index.php/Guilty_Gear_Xrd_-REVELATOR-">Dustloop GG Rev Wiki</a>. Overwatch icons made by Blizzard Entertainment.</p>
+				<p>Copyright everyone else but me muhahaha</p>
 			</div>
 			<div id="helpMenu">
 				<h1>HELP</h1>
@@ -129,20 +117,7 @@
 		
 		// character images
 		var singleChar = "<div class='character'></div>";
-		var gameSmash4 = ["ssb4","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","marth","ike","robin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","rob","ness","captainfalcon","villager","olimar","wiifittrainer","shulk","drmario","darkpit","lucina","pacman","megaman","sonic","mewtwo","lucas","roy","ryu","cloud","corrin","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
-		var gameSSB4Renders = ["ssb4r","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","marth","ike","robin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","rob","ness","captainfalcon","villager","olimar","wiifittrainer","shulk","drmario","darkpit","lucina","pacman","megaman","sonic","mewtwo","lucas","roy","ryu","cloud","corrin","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
-		var gameMelee = ["melee","drmario","mario","luigi","bowser","peach","yoshi","dk","falcon","ganon","falco","fox","ness","icies","kirby","samus","zelda","sheik","link","ylink","pichu","pikachu","jigglypuff","mewtwo","gnw","marth","roy"];
-		var game64 = ["64","luigi","mario","dk","link","samus","falcon","ness","yoshi","kirby","fox","pikachu","jigglypuff"];
-		var gameBrawl = ["brawl","mario","luigi","peach","bowser","donkeykong","diddykong","yoshi","wario","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","iceclimbers","rob","kirby","metaknight","kingdedede","olimar","fox","falco","wolf","captainfalcon","pikachu","pokemontrainer","lucario","jigglypuff","marth","ike","ness","lucas","mrgamewatch","snake","sonic"];
-		var gamePM = ["pm","wario","mario","luigi","peach","bowser","yoshi","donkeykong","diddykong","falcon","wolf","fox","falco","icies","zelda","sheik","link","toonlink","ganon","mewtwo","lucario","pikachu","jigglypuff","squirtle","ivysaur","charizard","samus","zerosuit","lucas","ness","pit","kirby","metaknight","dedede","ike","marth","roy","olimar","rob","gnw","snake","sonic"];
-		var gameBrawlMinus = ["bminus","mario","luigi","peach","bowser","yoshi","donkeykong","diddy","wario","waluigi","link","zelda","sheik","ganondorf","toonlink","samus","zss","ness","lucas","pikachu","jigglypuff","pichu","mewtwo","squirtle","ivysaur","charizard","lucario","kirby","dedede","mk","fox","falco","wolf","marth","roy","ike","captainfalcon","gnw","iceclimbers","rob","pit","olimar","snake","sonic"];
-		var gameBrawlZeus = ["zeus","mario","luigi","peach","koopa","yoshi","dk","dd","wario","link","zelda","sheik","ganon","tlik","samus","zss","ness","lucas","pikachu","pichu","purin","m2","zenigame","fushigisou","lizardon","lucario","kirby","ddd","MK","fox","falco","wolf","marth","roy","ike","lucina","wayu","cf","gw","rob","pit","olimar","snake","sonic","4cloud","blackpit","cloudminus","geno","knuckles","lyn","mac","meta","ridley","ryu","shadow","shulk"];
-		var gameSFV = ["sfv","alex","akuma","balrog","birdie","cammy","chunli","dhalsim","fang","guile","ibuki","karin","ken","kolin","laura","mbison","nash","necalli","rashid","rmika","ryu","vega","zangief","juri","urien"];
-		var gameGGREV = ["ggrev","axl","bedman","chipp","elphelt","faust","ino","jacko","jam","johnny","kum","ky","leo","may","millia","potemkin","ramlethal","raven","sin","slayer","sol","venom","zato1","dizzy"];
-		var gameSSF2 = ["ssf2","mario","dk","link","kirby","samus","megaman","fox","ness","pikachu","sonic","peach","wario","zelda","sheik","metaknight","zss","bomberman","falcon","blackmage","jigglypuff","tails","yoshi","marth","lloyd","chibirobo","sora","ichigo","naruto","goku"];
-		var gameCorrinMode = ["ssb4r","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm"];
-		var gameOW = ["ow","ana","bastion","dva","genji","hanzo","junkrat","lucio","mccree","mei","mercy","pharah","reaper","reinhardt","roadhog","soldier","sombra","symmetra","torbjorn","tracer","widowmaker","winston","zarya","zenyatta"];
-		var gameBrawlhalla = ["bh","ada","asuri","azoth","barraza","bodvar","brynn","cassidy","diana","ember","gnash","hattori","jhala","koji","kor","lordvraxx","lucien","orion","queennai","ragnir","scarlet","sentinel","sirroland","teros","thatch","ulgrim","val","wushang","axe","bow","gauntlet","gun","hammer","katar","lance","spear","sword"];
+		var gameEmoji = ["Emoji", "YuiAngry.png", "YotsugiPout.png", "TsukihiPeek.png", "TomoTehepero.png", "TohruStronk.png", "TohruShrug.png", "TohruPoint.png", "TohruAngery.png", "Smug4.png", "Smug3.png", "Smug2.png", "Smug1.png", "SatanaThumbsUp.png", "SallyWut.png", "SakurakoConfused.png", "SagiriShy.png", "RinDab.png", "RiamuDoeEyes.png", "Pantsu.png", "NobuTease.png", "NobuFakeSmile.png", "NobuDepression.png", "NicoAhegao.png", "NepHug.png", "NeneThumbsUp.png", "NeneTense.png", "NeneSmug.png", "NeneScared.png", "NeneSalute.png", "NenePout.png", "NeneExasperated.png", "NeneDoesntUnderstand.png", "NeneCry.png", "NeneBump.png", "NeneAshamed.png", "nekosip.png", "NadekoPunishment.png", "MonikaJustMonika.png", "MikuHappy.png", "MikuDab3.png", "MikuDab2.png", "MikuDab.png", "memphisRIPPEDchair.png", "MeguW.png", "MeguHappy.png", "MeguGun.png", "MeguCry.png", "MafuSleepy.png", "M200Dab.png", "LuigiDab.png", "Loss4.png", "Loss3.png", "Loss2.png", "Loss1.png", "LilyPunch.png", "KyoukoSmug2.png", "KyoukoSmug.png", "KomiPat.png", "KizunaSmug.png", "KannaWave.png", "KannaWant.png", "KannaStare.png", "KannaSleep.png", "KannaPeer.png", "kannaPat.png", "KannaOhh.png", "KannaNo.png", "KannaFreeze.png", "KannaBlob.png", "KaguyaCute.png", "KagerouPat.png", "HitomiOhMy.png", "HeartTrans.png", "HeartLesbian.png", "HeartGenderqueer.png", "HeartGay.png", "HeartAce.png", "HachikujiMoney.png", "GabrielThink.png", "CirnoWink.png", "ChinatsuBlush.png", "ChikaAngry.png", "CharlotteUgh.png", "CatPat.png", "blank.png", "Blackbloc.png", "BeaPeek.png", "AzuCat.png", "AquaYeah.png", "AquaCry.png", "AquaBaka.png", "AoHappy.png", "AkkoHug.png", "AkariNoBully.png", "IllyaScream.gif", "ShinobuThirsty1.gif", "ShinobuThirsty2.gif", "ShinobuThirsty3.gif"];
 		
 		var singleTier = "<tr><td class='labelHolder' contenteditable='true' style='background-color:#FFFF7F'><span class='label'>NEW</span></td><td><div class='tier sort' id='rows'><div class='hiddenkid'></div></div></td><td><div id='settings'></div><div id='moveButtons'><div id='moveUp'></div><div id='moveDown'></div></div></td></tr>";
 		
@@ -164,7 +139,7 @@
 		var currentColor;
 		var colorIndex;
 		var currentGame;
-		var currentGameChars = gameSmash4;
+		var currentGameChars = gameEmoji;
 		var characters;
 		var resized,tableWidth;
 					  
@@ -215,19 +190,7 @@
 		$(document).on("click", "#gameChange button", function() { // change game
 			console.log("game switching");
 			switch($(this).attr("id")) {
-				case "switch64": changeGame(game64);break;
-				case "switchMelee": changeGame(gameMelee);break;
-				case "switchBrawl": changeGame(gameBrawl);break;
-				case "switchPM": changeGame(gamePM);break;
-				case "switchBrawlMinus": changeGame(gameBrawlMinus);break;
-				case "switchBrawlZeus": changeGame(gameBrawlZeus);break;
-				case "switchSmash4": changeGame(gameSmash4);break;
-				case "switchSSB4Renders": changeGame(gameSSB4Renders);break;
-				case "switchSFV": changeGame(gameSFV);break;
-				case "switchGGREV": changeGame(gameGGREV);break;
-				case "switchSSF2": changeGame(gameSSF2);break;
-				case "switchBrawlhalla": changeGame(gameBrawlhalla);break;
-				case "switchOW": changeGame(gameOW);break;
+				case "switchEmoji": changeGame(gameEmoji);break;
 			}
 		});
 			
@@ -298,18 +261,7 @@
 				loadCode($("#exportcode").val());
 			} else if (clicked == "reset") {
 				switch(currentGameChars[0]) {
-					case "64": changeGame(game64);break;
-					case "melee": changeGame(gameMelee);break;
-					case "brawl": changeGame(gameBrawl);break;
-					case "bminus": changeGame(gameBrawlMinus);break;
-					case "zeus": changeGame(gameBrawlZeus);break;
-					case "pm": changeGame(gamePM);break;
-					case "ssb4": changeGame(gameSmash4);break;
-					case "sfv": changeGame(gameSFV);break;
-					case "ggrev": changeGame(gameGGREV);break;
-					case "ssf2": changeGame(gameSSF2);break;
-					case "bh": changeGame(gameBrawlhalla);break;
-					case "ow": changeGame(gameOW);break;
+					case "Emoji": changeGame(gameEmoji);break;
 				}
 				loadCode(currentGameChars[0]+"==S|0==A|1==B|3==C|5==D|7==E|8==F|9");
 			}
@@ -352,7 +304,7 @@
 			});
 			for (var i = 1; i < game.length; i++) {
 				$("#char div:last-child").after(singleChar);
-				$("#char div:last-child").css("background-image","url(img/"+currentGame+"/"+game[i]+".png)");
+				$("#char div:last-child").css("background-image","url(img/"+currentGame+"/"+game[i]+")");
 				$("#char div:last-child").attr("id",i);
 			}
 			$("h1 span").text(currentGame);
@@ -402,19 +354,7 @@
 			});
 			console.log(processedCode);
 			switch(processedCode[0][0]) {
-				case "64": changeGame(game64);break;
-				case "melee": changeGame(gameMelee);break;
-				case "brawl": changeGame(gameBrawl);break;
-				case "bminus": changeGame(gameBrawlMinus);break;
-				case "zeus": changeGame(gameBrawlZeus);break;
-				case "pm": changeGame(gamePM);break;
-				case "ssb4": changeGame(gameSmash4);break;
-				case "ssb4r": changeGame(gameSSB4Renders);break;
-				case "sfv": changeGame(gameSFV);break;
-				case "ggrev": changeGame(gameGGREV);break;
-				case "ssf2": changeGame(gameSSF2);break;
-				case "bh": changeGame(gameBrawlhalla);break;
-				case "ow": changeGame(gameOW);break;
+				case "Emoji": changeGame(gameEmoji);break;
 			}
 			for (var i = 1; i < processedCode.length; i++) {
 				$("tbody").append(singleTier);
@@ -443,7 +383,7 @@
 		$(document).ready( function() {
 			$("#char").html("<div></div>");
 			if (localStorage.getItem("TierListMakerCode") === null)
-				changeGame(gameSmash4);
+				changeGame(gameEmoji);
 			else {
 				$("#exportcode").val(localStorage.getItem("TierListMakerCode"));
 				loadCode(localStorage.getItem("TierListMakerCode"));
